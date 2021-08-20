@@ -1,0 +1,11 @@
+####Docker
+
+sudo yum install docker
+sudo yum install amazon-docker-config
+sudo amazon-docker-setup $USER
+sudo /etc/init.d/docker start
+[Note: If this command gives "sudo: /etc/init.d/docker: command not found" then try by removing the docker and reinstall it using this cmd: sudo yum -y install docker-17.12.1ce-2.amzn2.x86_64 ]
+source /etc/profile.d/docker_host.sh
+
+rde wflow run provision and rde wflow run
+rde stack exec ManifestRedriveToolsService bash
